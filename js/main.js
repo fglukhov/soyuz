@@ -52,6 +52,63 @@ var baseUrl = "";
 
 $(document).ready(function() {
 
+	// Mobile filter
+
+	$("body").on("click", ".filter-trigger", function () {
+
+		$(".filter").fadeIn(150).addClass("open");
+
+		$("body").addClass("modal-open");
+
+	});
+
+	$("body").on("click", ".filter-close, .filter-apply", function () {
+
+		$(".filter").fadeOut(150).removeClass("open");
+
+		$("body").removeClass("modal-open");
+
+	});
+
+	// Mobile filter END
+
+	// Contacts map
+
+	ymaps.ready(function () {
+
+		var myMap = new ymaps.Map('footerMap', {
+				center: [56.893741, 53.238628],
+				zoom: 16,
+				controls: []
+			}, {}),
+
+			myPlacemark1 = new ymaps.Placemark([56.893741, 53.238628], {
+				hintContent: '',
+				balloonContent: ''
+			}, {
+				// Опции.
+				// Необходимо указать данный тип макета.
+				iconLayout: 'default#image',
+				// Своё изображение иконки метки.
+				iconImageHref: 'images/map-pin.svg',
+				// Размеры метки.
+				iconImageSize: [30, 30],
+				// Смещение левого верхнего угла иконки относительно
+				// её "ножки" (точки привязки).
+				iconImageOffset: [-15, -15]
+			});
+
+
+
+		myMap.behaviors.disable('scrollZoom');
+
+		myMap.geoObjects
+			.add(myPlacemark1);
+
+	});
+
+	// Contacts map END
+
 	// Product pic switch
 
 	$(".product-pic-switch-item").click(function () {
@@ -1956,6 +2013,39 @@ function initSliders() {
 						breakpoint: 768,
 						settings: {
 							fade: false
+						}
+					}
+				]
+			});
+
+		}
+
+	});
+
+	$(".catalog-slider").each(function () {
+
+		if (!$(this).hasClass("slick-initialized")) {
+
+			$(this).slick({
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				dots: false,
+				rows: 0,
+				adaptiveHeight: true,
+				responsive: [
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							dots: true
 						}
 					}
 				]

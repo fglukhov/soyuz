@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Союз</title>
+    <link rel="icon" type="image/png" href="icon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="icon-32.png" sizes="32x32">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header>
+        <div class="container">
+          <div class="header-content">
+            <div class="row">
+              <div class="col header-col-1">
+                <div class="navbar-trigger"><span></span><span></span><span></span></div>
+              </div>
+              <div class="col header-col-2">
+                <div class="header-logo"><img src="images/logo.svg" alt="Союз"></div>
+              </div>
+              <div class="col header-col-3">
+                <div class="lang-selector-wrapper">
+                  <div class="lang-selector-trigger">
+                    <div class="lang-selector-val">
+                      <div class="lang-selector-flag"><img src="images/flag-ru.svg"></div>
+                      <div class="lang-selector-ttl">Ru</div>
+                    </div>
+                    <div class="lang-selector-arrow"></div>
+                  </div>
+                  <div class="lang-selector-dropdown">
+                    <div class="lang-selector-item"><a class="active" href="#">Ru</a></div>
+                    <div class="lang-selector-item"><a href="#">En</a></div>
+                    <div class="lang-selector-item"><a href="#">Es</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col header-col-4">
+                <div class="header-contacts">
+                  <div class="row">
+                    <div class="col header-contacts-col-1">
+                      <div class="header-phone"><a href="tel: 8 800 500-56-25">8 800 500-56-25</a></div>
+                    </div>
+                    <div class="col header-contacts-col-2">
+                      <div class="header-email"><a href="mailto:info@souyz.pro">info@souyz.pro</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-wrapper">
+          <div class="navbar-wrapper-inner">
+            <div class="navbar-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col navbar-col-1">
+                    <div class="main-menu-wrapper">
+                      <div class="main-menu-section">
+                        <div class="ttl">Основное</div>
+                        <ul class="main-menu">
+                          <li><a href="#">Главная</a></li>
+                          <li><a href="#">Проекты</a></li>
+                          <li><a href="#">Услуги</a></li>
+                          <li><a href="#">О&nbsp;производстве</a></li>
+                          <li><a href="#">О&nbsp;компании</a></li>
+                          <li><a href="#">Команда</a></li>
+                          <li><a href="#">Отзывы</a></li>
+                          <li><a href="#">Контакты</a></li>
+                          <li><a href="#">Блог</a></li>
+                        </ul>
+                      </div>
+                      <div class="main-menu-section">
+                        <div class="ttl">Продукция</div>
+                        <ul class="main-menu">
+                          <li><a href="#">Виды конструкций</a></li>
+                          <li><a href="#">Основные элементы лесов</a></li>
+                          <li><a href="#">Профессиональные преимущества</a></li>
+                          <li><a href="#">Принципы работы</a></li>
+                          <li><a href="#">Безопасность</a></li>
+                        </ul>
+                      </div>
+                      <div class="main-menu-section">
+                        <div class="ttl">Сферы применения</div>
+                        <ul class="main-menu">
+                          <li><a href="#">Промышленность</a></li>
+                          <li><a href="#">Строительство</a></li>
+                          <li><a href="#">Шоу-мероприятия</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col navbar-col-2">
+                    <div class="navbar-contacts">
+                      <div class="contacts-phone-wrapper">
+                        <div class="contacts-phone"><a href="tel:8 800 234 99 00">8 800 234 99 00</a></div>
+                        <div class="contacts-phone-info">
+                          <p>Звонок<br>бесплатный</p>
+                        </div>
+                      </div>
+                      <div class="contacts-address">
+                        <div class="contacts-address-city">г. Ижевск</div>
+                        <div class="contacts-address-item">
+                          <p>426039, Воткинское шоссе, 33а</p>
+                        </div>
+                      </div>
+                      <div class="contacts-email">
+                        <p><a href="mailto:info@soyuz.pro">info@soyuz.pro</a></p>
+                      </div>
+                      <div class="navbar-soclinks">
+                        <div class="contacts-soclinks-section">
+                          <div class="soclinks"><a class="soclink" href="#"><img src="images/soclink-telegram.svg"></a><a class="soclink" href="#"><img src="images/soclink-whatsapp.svg"></a><a class="soclink" href="#"><img src="images/soclink-messenger.png" width="25"></a><a class="soclink" href="#"><img src="images/soclink-viber.png" width="22"></a></div>
+                        </div>
+                        <div class="contacts-soclinks-section">
+                          <div class="soclinks"><a class="soclink" href="#"><img src="images/soclink-facebook.svg"></a><a class="soclink" href="#"><img src="images/soclink-instagram.svg"></a><a class="soclink" href="#"><img src="images/soclink-youtube.svg"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-bottom">
+              <div class="navbar-bottom-pic" style="background-image: url(images/navbar-bottom-pic.jpg)"></div>
+              <div class="container">
+                <div class="row">
+                  <div class="col navbar-bottom-col">
+                    <div class="navbar-catalog">
+                      <div class="navbar-catalog-descr">
+                        <h3>Хотите узнать больше?</h3>
+                        <p>Ознакомьтесь с презентацией о нашей компании</p>
+                        <div class="navbar-catalog-descr-button"><a class="btn btn-dl" href="#">
+                            <div class="btn-cont">
+                              <div class="btn-dl-arrow"></div>
+                              <div class="btn-dl-text">Загрузить маркетинг-кит</div>
+                            </div></a></div>
+                      </div>
+                      <div class="navbar-catalog-pic"><img src="images/navbar-bottom-catalog.png"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="page-wrapper">
+          <!-- Шапка страницы-->
+          <div class="page-header page-header-alt">
+            <div class="container">
+              <div class="row">
+                <div class="col page-header-col-1">
+                  <div class="page-header-descr">
+                    <div class="page-header-descr-top">
+                      <ul class="breadcrumb">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Виды конструкций</a></li>
+                        <li><span>Маршевые лестницы и башни доступа</span></li>
+                      </ul>
+                      <h1>Маршевые лестницы и башни доступа</h1>
+                      <div class="page-header-button"><a class="btn btn-submit btn-submit-alt" href="#" data-toggle="modal" data-target="#estimateModal">
+                          <div class="btn-cont">
+                            <div class="btn-submit-text">Заказать расчёт</div>
+                            <div class="btn-submit-arrow"></div>
+                          </div></a></div>
+                    </div>
+                    <div class="page-header-descr-bottom">
+                      <div class="page-header-descr-bottom-content"><a class="back-link" href="#">
+                          <div class="back-link-arrow"></div>
+                          <div class="back-link-text">Назад к&nbsp;списку видов конструкций</div></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col page-header-col-2">
+                  <div class="page-header-pic">
+                    <div class="product-pic-wrapper">
+                      <div class="product-pics">
+                        <div class="product-pic">
+                          <div class="slider-wrapper product-slider-wrapper">
+                            <div class="product-slider slider-countable">
+                              <div class="slide">
+                                <div class="product-slide">
+                                  <div class="product-slide-pic"><img src="files/construction-item-pic-1.png"></div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="product-slide">
+                                  <div class="product-slide-pic"><img src="files/construction-item-pic-2.png"></div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="product-slide">
+                                  <div class="product-slide-pic"><img src="files/construction-item-pic-1.png"></div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="product-slide">
+                                  <div class="product-slide-pic"><img src="files/construction-item-pic-2.png"></div>
+                                </div>
+                              </div>
+                              <div class="slide">
+                                <div class="product-slide">
+                                  <div class="product-slide-pic"><img src="files/construction-item-pic-1.png"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Шапка страницы END-->
+          <!-- Тело страницы-->
+          <div class="page-body page-body-alt">
+            <div class="catalog-descr-wrapper">
+              <div class="container">
+                <div class="row">
+                  <div class="col catalog-descr-col-1">
+                    <div class="catalog-item-descr">
+                      <h2>Описание</h2>
+                      <p>Удобный и безопасный подъем на высоту иногда является неотъемлемой частью при строительстве и эксплуатации объектов, а также при проведении культурно-массовых мероприятий.</p>
+                      <p>В основе конструктива лежат, как стандартные элементы, которые вы можете использовать, для любых видов лесов, так и специальные усиленные балки маршевой лестницы, которые обеспечиваю быстрый монтаж, высокую несущую способность и безопасную эксплуатацию маршевых лестницы.</p>
+                      <p>В качестве ступеней выступает стандартный стальной настил для строительных лесов, который потом может быть использован как настила рабочего уровня, например, на фасадных лесах. В отличии от компактных алюминиевых маршевых лестниц, маршевые лестницы для массовых мероприятий выполнены из стали и отличаются повышенной несущей способностью, для безопасной эксплуатации во время большого скопления людей.</p>
+                      <h2>Технические характеристики</h2>
+                      <table class="tech-table">
+                        <tr>
+                          <td class="name">Высота:</td>
+                          <td class="val">100 м (необходим расчёт и проект)</td>
+                        </tr>
+                        <tr>
+                          <td class="name">Нагрузка:</td>
+                          <td class="val">300, 400, 600 кг/м&sup2;</td>
+                        </tr>
+                        <tr>
+                          <td class="name">Длина пролёта марша:</td>
+                          <td class="val">2.5, 3 м</td>
+                        </tr>
+                        <tr>
+                          <td class="name">Ширина марша:</td>
+                          <td class="val">0.5, 0.75, 1, 1.5, 2, 2.5, 3 м</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col catalog-descr-col-2 sticky-wrapper">
+                    <div class="sticky-block">
+                      <div class="question-block">
+                        <h3>Есть вопросы?</h3>
+                        <p>Мы&nbsp;готовы ответить на&nbsp;все ваши вопросы, позвоните нам или оставьте номер, и&nbsp;мы&nbsp;перезвоним.</p>
+                        <div class="contacts-phone-wrapper contacts-phone-wrapper-alt">
+                          <div class="contacts-phone"><a href="tel:8 800 234 99 00">8 800 234 99 00</a></div>
+                          <div class="contacts-phone-info">
+                            <p>Звонок<br>бесплатный</p>
+                          </div>
+                        </div>
+                        <div class="question-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#callbackModal">Перезвоните мне</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Тело страницы END-->
+          <!-- Элементы конструкции	-->
+          <div class="section section-products">
+            <div class="container">
+              <div class="section-content">
+                <div class="section-header section-header-alt">
+                  <h2>Элементы конструкции</h2>
+                </div>
+                <div class="slider-wrapper catalog-slider-wrapper">
+                  <div class="catalog-slider">
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-1.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Диагональ вертикальная</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Придает жесткость и устойчивость конструкции лесов, а также служит для устройства консольных вылетов (балконов) и мостовых конструкций</p>
+                          </div>
+                        </div></a></div>
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-2.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Стойка</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Основной несущий вертикальный элемент лесов</p>
+                          </div>
+                        </div></a></div>
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-3.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Элемент стартовый</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Обеспечивает безопасный и быстрый монтаж нулевого уровня лесов</p>
+                          </div>
+                        </div></a></div>
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-1.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Диагональ вертикальная</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Придает жесткость и устойчивость конструкции лесов, а также служит для устройства консольных вылетов (балконов) и мостовых конструкций</p>
+                          </div>
+                        </div></a></div>
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-2.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Стойка</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Основной несущий вертикальный элемент лесов</p>
+                          </div>
+                        </div></a></div>
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-3.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Элемент стартовый</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Обеспечивает безопасный и быстрый монтаж нулевого уровня лесов</p>
+                          </div>
+                        </div></a></div>
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-1.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Диагональ вертикальная</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Придает жесткость и устойчивость конструкции лесов, а также служит для устройства консольных вылетов (балконов) и мостовых конструкций</p>
+                          </div>
+                        </div></a></div>
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-2.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Стойка</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Основной несущий вертикальный элемент лесов</p>
+                          </div>
+                        </div></a></div>
+                    <div class="slide"><a class="catalog-tmb" href="#">
+                        <div class="catalog-tmb-pic"><img src="files/elements-catalog-tmb-3.png"></div>
+                        <div class="catalog-tmb-descr">
+                          <h3>Элемент стартовый</h3>
+                          <div class="catalog-tmb-text">
+                            <p>Обеспечивает безопасный и быстрый монтаж нулевого уровня лесов</p>
+                          </div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Элементы конструкции END-->
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col footer-col-1">
+              <div class="footer-contacts">
+                <div class="contacts-form-wrapper">
+                  <h2>Написать нам</h2>
+                  <div class="contacts-form">
+                    <form>
+                      <div class="row">
+                        <div class="col contacts-form-col">
+                          <div class="form-group">
+                            <div class="form-group-ico"><img src="images/form-group-name.svg"></div>
+                            <label class="placeholder" for="contacts_name">Как вас зовут?*</label>
+                            <input type="text" name="contacts_name" id="contacts_name" required>
+                          </div>
+                        </div>
+                        <div class="col contacts-form-col">
+                          <div class="form-group">
+                            <div class="form-group-ico"><img src="images/form-group-phone.svg"></div>
+                            <label class="placeholder" for="contacts_phone">Телефон*</label>
+                            <input class="input-phone" type="text" name="contacts_phone" id="contacts_phone" required>
+                          </div>
+                        </div>
+                        <div class="col contacts-form-col">
+                          <div class="form-agree">
+                            <p>Нажимая кнопку, я&nbsp;даю даю разрешение на&nbsp;использование моих персональных данных в&nbsp;соответствии с <a href="#">политикой конфиденциальности</a></p>
+                          </div>
+                        </div>
+                        <div class="col contacts-form-col">
+                          <div class="form-footer">
+                            <button class="btn btn-submit" type="submit">
+                              <div class="btn-cont">
+                                <div class="btn-submit-text">Обсудить сотрудничество</div>
+                                <div class="btn-submit-arrow"></div>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="contacts-descr">
+                  <div class="contacts-phone-wrapper">
+                    <div class="contacts-phone"><a href="tel:8 800 234 99 00">8 800 234 99 00</a></div>
+                    <div class="contacts-phone-info">
+                      <p>Звонок<br>бесплатный</p>
+                    </div>
+                  </div>
+                  <div class="contacts-address">
+                    <div class="contacts-address-city">г. Ижевск</div>
+                    <div class="contacts-address-item">
+                      <p><span class="ttl">Офис продаж:</span> 426039, Воткинское шоссе, 33а</p>
+                    </div>
+                    <div class="contacts-address-item">
+                      <p><span class="ttl">Производство:</span> 426039, Воткинское шоссе, 33а</p>
+                    </div>
+                  </div>
+                  <div class="contacts-email">
+                    <p><a href="mailto:info@soyuz.pro">info@soyuz.pro</a></p>
+                  </div>
+                </div>
+                <div class="contacts-soclinks">
+                  <div class="row">
+                    <div class="col contacts-soclinks-col-1">
+                      <div class="soclinks"><a class="soclink" href="#"><img src="images/soclink-facebook.svg"></a><a class="soclink" href="#"><img src="images/soclink-instagram.svg"></a><a class="soclink" href="#"><img src="images/soclink-youtube.svg"></a></div>
+                    </div>
+                    <div class="col contacts-soclinks-col-2">
+                      <div class="soclinks"><a class="soclink" href="#"><img src="images/soclink-telegram.svg"></a><a class="soclink" href="#"><img src="images/soclink-whatsapp.svg"></a><a class="soclink" href="#"><img src="images/soclink-messenger.png" width="25"></a><a class="soclink" href="#"><img src="images/soclink-viber.png" width="22"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-content">
+                  <div class="row">
+                    <div class="col footer-content-col-1">
+                      <div class="footer-copy">
+                        <p>&copy;&nbsp;Завод строительных лесов<br>&laquo;Союз&raquo; 2021.<br>Все права защищены.</p>
+                      </div>
+                    </div>
+                    <div class="col footer-content-col-2">
+                      <div class="footer-dev-wrapper"><a class="footer-dev" href="https://paradigma-digital.ru" target="_blank">
+                          <div class="footer-dev-pic"><img src="images/paradigma-logo.svg"></div>
+                          <div class="footer-dev-descr">
+                            <p>Разработка сайта&nbsp;&mdash;<br>Paradigma</p>
+                          </div></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col footer-col-2">
+              <div class="footer-map" id="footerMap"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade side-modal serv-modal" id="servModal" tabindex="-1">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close.svg"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="row">
+              <div class="side-modal-l">
+                <div class="side-modal-l-inner">
+                  <div class="ajax-modal-content"></div>
+                </div>
+              </div>
+              <div class="side-modal-r">
+                <div class="ajax-modal-menu-wrapper">
+                  <ul class="ajax-modal-menu">
+                    <li><a href="#" data-url="load/serv-1.html" data-hash="service-1">Металлоконструкции</a></li>
+                    <li><a href="#" data-url="load/serv-2.html" data-hash="service-2">Резервуары</a></li>
+                    <li><a href="#" data-url="load/serv-3.html" data-hash="service-3">Фасады</a></li>
+                    <li><a href="#" data-url="load/serv-4.html" data-hash="service-4">Дымовые трубы</a></li>
+                    <li><a href="#" data-url="load/serv-5.html" data-hash="service-5">Кабеля</a></li>
+                    <li><a href="#" data-url="load/serv-6.html" data-hash="service-6">Объекты любого типа</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal estimate-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content-wrapper">
+            <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/form-modal-close.svg"></button>
+              <div class="modal-content-inner">
+                <div class="form-modal-header">
+                  <h2>Заказать звонок</h2>
+                </div>
+                <div class="modal-form">
+                  <form id="callbackForm">
+                    <div class="form-group">
+                      <div class="form-group-ico"><img src="images/form-group-name.svg"></div>
+                      <label class="placeholder" for="callback_name">Как вас зовут?*</label>
+                      <input type="text" name="callback_name" id="callback_name" required>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-group-ico"><img src="images/form-group-phone.svg"></div>
+                      <label class="placeholder" for="callback_phone">Телефон*</label>
+                      <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
+                    </div>
+                    <div class="form-agree">
+                      <p>Нажимая кнопку, я&nbsp;даю даю разрешение на&nbsp;использование моих персональных данных в&nbsp;соответствии с <a href="#">политикой конфиденциальности</a></p>
+                    </div>
+                    <div class="form-footer">
+                      <button class="btn btn-submit" type="submit">
+                        <div class="btn-cont">
+                          <div class="btn-submit-text">Отправить заявку</div>
+                          <div class="btn-submit-arrow"></div>
+                        </div>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="estimateModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content-wrapper">
+            <div class="modal-content-pic"><img src="files/estimate-modal-pic.png" width="290"></div>
+            <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/form-modal-close.svg"></button>
+              <div class="modal-content-inner">
+                <div class="form-modal-header">
+                  <h2>Заказать звонок</h2>
+                </div>
+                <div class="modal-form">
+                  <form id="estimateForm">
+                    <div class="form-group">
+                      <div class="form-group-ico"><img src="images/form-group-name.svg"></div>
+                      <label class="placeholder" for="estimate_name">Как вас зовут?*</label>
+                      <input type="text" name="estimate_name" id="estimate_name" required>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-group-ico"><img src="images/form-group-phone.svg"></div>
+                      <label class="placeholder" for="estimate_phone">Телефон*</label>
+                      <input class="input-phone" type="text" name="estimate_phone" id="estimate_phone" required>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-group-ico"><img src="images/form-group-message.svg"></div>
+                      <label class="placeholder" for="estimate_message">Опишите проект</label>
+                      <textarea type="text" name="estimate_message" id="estimate_message" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-file">
+                        <input type="file" data-label="Прикрепить ТЗ">
+                      </div>
+                    </div>
+                    <div class="form-agree">
+                      <p>Нажимая кнопку, я&nbsp;даю даю разрешение на&nbsp;использование моих персональных данных в&nbsp;соответствии с <a href="#">политикой конфиденциальности</a></p>
+                    </div>
+                    <div class="form-footer">
+                      <button class="btn btn-submit" type="submit">
+                        <div class="btn-cont">
+                          <div class="btn-submit-text">Запросить расчёт</div>
+                          <div class="btn-submit-arrow"></div>
+                        </div>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="catalogModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content-wrapper">
+            <div class="modal-content-pic"><img src="files/catalog-modal-pic.png" width="319"></div>
+            <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/form-modal-close.svg"></button>
+              <div class="modal-content-inner">
+                <div class="form-modal-header">
+                  <h2>Получить каталог</h2>
+                </div>
+                <div class="modal-form">
+                  <form id="catalogForm">
+                    <div class="form-group">
+                      <div class="form-group-ico"><img src="images/form-group-name.svg"></div>
+                      <label class="placeholder" for="catalog_name">Как вас зовут?*</label>
+                      <input type="text" name="catalog_name" id="catalog_name" required>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-group-ico"><img src="images/form-group-phone.svg"></div>
+                      <label class="placeholder" for="catalog_phone">Телефон*</label>
+                      <input class="input-phone" type="text" name="catalog_phone" id="catalog_phone" required>
+                    </div>
+                    <div class="form-agree">
+                      <p>Нажимая кнопку, я&nbsp;даю даю разрешение на&nbsp;использование моих персональных данных в&nbsp;соответствии с <a href="#">политикой конфиденциальности</a></p>
+                    </div>
+                    <div class="form-footer">
+                      <button class="btn btn-submit" type="submit">
+                        <div class="btn-cont">
+                          <div class="btn-submit-text">Запросить расчёт</div>
+                          <div class="btn-submit-arrow"></div>
+                        </div>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-content-inner">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/form-modal-close.svg"></button>
+              <h2><span class="red">Спасибо</span><br>за&nbsp;оказанное доверие</h2>
+              <div class="form-modal-lead success-modal-text">
+                <p>Наш специалист свяжется с&nbsp;Вами.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery.mobile.custom.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="js/nouislider.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/main.js"></script>
+      <!--script(src='js/animations.js')-->
+    </div>
+  </body>
+</html>
